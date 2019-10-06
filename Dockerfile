@@ -11,3 +11,6 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community > /etc/apk/reposi
     ttf-freefont@edge \
     && rm -rf /var/cache/* \
     && mkdir /var/cache/apk
+
+ENV CHROME_BIN=/usr/bin/chromium-browser \
+    CHROME_PATH=/usr/lib/chromium/
